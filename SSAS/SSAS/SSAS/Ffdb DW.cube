@@ -1,0 +1,1482 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e37f4327-8a06-4b33-8565-eb48a1110630" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ffdb DW</ID>
+  <Name>Ffdb DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="8202" scrolltop="5130" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="55" x="14340" y="8943" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFlight" left="27769" top="10771" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimFlight" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="38638" top="6821" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="12525" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3149" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004d0c000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDepartment" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactFlightSchedule" left="25069" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3069" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactFlightSchedule" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAirplane" left="11569" top="14181" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAirplane" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="94" top="0" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimEmployee" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAddress" left="5569" top="7188" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAddress" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="7400" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3149" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004d0c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactEmployeeSalary" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAirport" left="22369" top="7362" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAirport" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactBookingSales" left="33169" top="7323" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3069" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactBookingSales" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimAirline" left="16969" top="14604" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimAirline" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPassenger" left="33195" top="13718" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3016" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPassenger" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="25069" top="9934" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="3134" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__DimFlight__From__5FB337D6]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="21" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="25369" y="10333" />
+              <point x="26569" y="10333" />
+              <point x="26569" y="12768" />
+              <point x="27769" y="12768" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="25069" top="8284" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="3134" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__DimFlight__To__60A75C0F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="15" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="25369" y="8683" />
+              <point x="26569" y="8683" />
+              <point x="26569" y="11118" />
+              <point x="27769" y="11118" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="19669" top="14118" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="8400" height="3010" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__DimFlight__Airli__619B8048]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="1" sourceattachpoint="17" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19969" y="16728" />
+              <point x="23869" y="16728" />
+              <point x="23869" y="14418" />
+              <point x="27769" y="14418" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="30469" top="9020" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="4148" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactBooki__Fligh__6477ECF3]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="10" sourceattachpoint="17" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="30769" y="12768" />
+              <point x="31969" y="12768" />
+              <point x="31969" y="9320" />
+              <point x="33169" y="9320" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="27403" top="4119" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="2266" height="7152" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFligh__Fligh__6A30C649]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="29269" y="10771" />
+              <point x="29269" y="7595" />
+              <point x="27703" y="7595" />
+              <point x="27703" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="35938" top="7822" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactBooki__Arriv__48CFD27E]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="10" sourceattachpoint="14" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="38638" y="8221" />
+              <point x="37438" y="8221" />
+              <point x="37438" y="8220" />
+              <point x="36238" y="8220" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="35938" top="9472" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactBooki__Depar__47DBAE45]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="10" sourceattachpoint="20" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="38638" y="9871" />
+              <point x="37438" y="9871" />
+              <point x="37438" y="9870" />
+              <point x="36238" y="9870" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="27403" top="4119" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="12035" height="3202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFligh__Depar__6EF57B66]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="0" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="39038" y="6821" />
+              <point x="39038" y="5620" />
+              <point x="27703" y="5620" />
+              <point x="27703" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="27403" top="4119" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="13685" height="3202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFligh__Arriv__6FE99F9F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="40688" y="6821" />
+              <point x="40688" y="5620" />
+              <point x="27703" y="5620" />
+              <point x="27703" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1195" top="9825" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactEmplo__Depar__07C12930]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="8" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1594" y="12525" />
+              <point x="1594" y="10125" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="22370" top="4119" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="4533" height="3743" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFlightSc__To__6C190EBB]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="4" sourceattachpoint="0" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22769" y="7362" />
+              <point x="22769" y="5891" />
+              <point x="26603" y="5891" />
+              <point x="26603" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="18070" top="4119" logicalid="24" controlid="24" masterid="0" hint1="0" hint2="0" width="8283" height="10985" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFligh__Airli__6D0D32F4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="4" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18469" y="14604" />
+              <point x="18469" y="9512" />
+              <point x="26053" y="9512" />
+              <point x="26053" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="24020" top="4119" logicalid="25" controlid="25" masterid="0" hint1="0" hint2="0" width="3433" height="3743" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFlight__From__6B24EA82]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="4" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="24419" y="7362" />
+              <point x="24419" y="5891" />
+              <point x="27153" y="5891" />
+              <point x="27153" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12670" top="4119" logicalid="26" controlid="26" masterid="0" hint1="0" hint2="0" width="13133" height="10562" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactFligh__Airpl__6E01572D]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13069" y="14181" />
+              <point x="13069" y="9300" />
+              <point x="25503" y="9300" />
+              <point x="25503" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="14269" top="15779" logicalid="27" controlid="27" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__DimAirpla__Airli__5CD6CB2B]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="5" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16969" y="16178" />
+              <point x="14569" y="16178" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1195" top="4501" logicalid="28" controlid="28" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactEmplo__Emplo__05D8E0BE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1594" y="5000" />
+              <point x="1594" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2869" top="8363" logicalid="29" controlid="29" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactEmplo__Addre__06CD04F7]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="14" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5569" y="8762" />
+              <point x="3169" y="8762" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="19669" top="9384" logicalid="30" controlid="30" masterid="0" hint1="0" hint2="0" width="3000" height="5994" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__DimAirlin__BaseA__5BE2A6F2]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="11" sourceattachpoint="18" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22369" y="9783" />
+              <point x="21169" y="9783" />
+              <point x="21169" y="15078" />
+              <point x="19969" y="15078" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="34304" top="11018" logicalid="31" controlid="31" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FactBooki__Passe__412EB0B6]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="10" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="34703" y="13718" />
+              <point x="34703" y="11318" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>8202</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>5130</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>55</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="19990390-642d-4c8c-9894-66a60cc1fce2">
+      <ID>Fact Booking Sales</ID>
+      <Name>Fact Booking Sales</Name>
+      <DimensionID>Fact Booking Sales</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="00aba2c1-81c6-4e40-9ec9-acfe718bfac9">
+          <AttributeID>Flight Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a09a6977-369c-48bb-86f0-290c4bc93bec">
+          <AttributeID>Passenger Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7681fa5-83b7-475b-9dec-560df9c80347">
+          <AttributeID>Fact Booking Sales - Flight Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fa222ca-9fb8-4352-88ec-65d348e2c7e2">
+          <AttributeID>Arrival Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="364266b1-1e63-48d4-a020-60160380ab3e">
+          <AttributeID>Departure Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="01427578-4c34-4e4e-a3a5-351152a6df50">
+      <ID>Arrival Date</ID>
+      <Name>Arrival Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="106bc30d-bcec-45d2-8e7e-b24a5a2af606">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2448afd-c9d1-48b3-8a4a-6746e1a26014">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c644b121-7edf-49ee-baf5-127d974e1003">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="768fbee3-f04b-420f-8e14-57750c089629">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1490f9e9-65d9-4950-9cf3-2741fc0c242f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0c202924-a7d8-436e-a7be-4c4303d19aee">
+      <ID>Departure Date</ID>
+      <Name>Departure Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7865ccaf-6664-4d75-89e2-66cacf0c7bbb">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3111c5fb-33c1-46c8-9e27-a19bfeff000d">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02551719-124a-420c-88f9-f5259e1b19a0">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95ea995d-2ee9-4ac6-9609-99b31ae260ca">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7dcddb03-ef75-49df-8f2e-335f58698e0d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="986b44db-94c1-4760-8821-7859bdea4b59">
+      <ID>Dim Passenger</ID>
+      <Name>Dim Passenger</Name>
+      <DimensionID>Dim Passenger</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c087211b-0cab-48c9-b20e-a9b530577766">
+          <AttributeID>Passenger Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="37a994a6-7636-44e0-8966-3de2600050e8">
+      <ID>Dim Flight</ID>
+      <Name>Dim Flight</Name>
+      <DimensionID>Dim Flight</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="851b4cd4-a139-4512-8faf-58419b436bf9">
+          <AttributeID>Flight Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f751a7f2-c665-4867-808e-6707202a97a4">
+          <AttributeID>To</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8cea4dd8-c286-45b5-8ffe-3d39c89df62e">
+          <AttributeID>Airline</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e337e3d-c153-41f7-997e-41a22e960176">
+          <AttributeID>From</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1066fde1-7184-4a5c-8772-f3e37156464e">
+      <ID>Dim Address</ID>
+      <Name>Dim Address</Name>
+      <DimensionID>Dim Address</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="41976adb-bd7b-467d-8bec-9d10a60b264a">
+          <AttributeID>Address Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b17b54f7-ead5-4f21-888b-0e7608846ddb">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0c05e211-e31c-4ccf-83f8-f87fe3fb8fd9">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8f0a2c2e-437e-4aed-ba10-8a9be812f325">
+      <ID>Dim Employee</ID>
+      <Name>Dim Employee</Name>
+      <DimensionID>Dim Employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="95ec4864-d6a2-4cea-95e1-f994bc4a6c8c">
+          <AttributeID>Employee Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="321159fc-8682-41e0-adc3-7f1af0218b30">
+          <AttributeID>Employee Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="10efacd1-0456-4555-a51e-4cc020f9fd92">
+          <AttributeID>First Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="03678789-e5c8-48d1-87c2-70b6132cf475">
+          <AttributeID>Last Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2fe7ccff-dc25-46ad-a65a-8bc07ea7ac65">
+      <ID>Dim Department</ID>
+      <Name>Dim Department</Name>
+      <DimensionID>Dim Department</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="77ed4025-00c0-4be0-bc84-e52239a40b69">
+          <AttributeID>Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24e0b5dd-bc72-4e02-9356-548f294493c5">
+          <AttributeID>Department</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="03791bc9-f6fc-4ba8-803a-b13fe79a8999">
+      <ID>To</ID>
+      <Name>To</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="609365f4-dfdb-424d-9e1e-df86709414fb">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ad149d4-faf1-4017-8f50-8c49c517f9c6">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2d18a2dd-a7db-4989-88b3-89afbc1e34b0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="89b391fb-aa2f-4b79-98dd-93a271158eb5">
+      <ID>Dim Airline</ID>
+      <Name>Dim Airline</Name>
+      <DimensionID>Dim Airline</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ec6d4cbf-2b08-40fc-aeee-73f033180686">
+          <AttributeID>Airline Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="567a8cfe-7315-4e70-ab72-bb8def891bef">
+          <AttributeID>Base Airport</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49c8339e-2ba2-493a-8784-c99c9725f162">
+          <AttributeID>Airline Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d5d3251d-4e75-475f-b457-1e288b7372b5">
+          <AttributeID>Airline Id</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="301657e2-ce08-4254-a1ba-17577ac0bfb1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="661ef386-8af6-4a73-aa1b-bd93e20e0b05">
+      <ID>From</ID>
+      <Name>From</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91e15533-8229-426c-b4c1-db0e060d59be">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e34556e-0141-4045-b291-43405c2153e1">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="dc4ef307-faec-4b79-9df1-20b7e46d346c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="3ed0890b-26ee-49a8-85d5-e632e6622001">
+      <ID>Dim Airplane</ID>
+      <Name>Dim Airplane</Name>
+      <DimensionID>Dim Airplane</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6ebd9ab1-c8c6-428a-8d7d-01ca5ac72c2b">
+          <AttributeID>Airplane Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a07e5f14-118f-4aae-8829-faec9530a925">
+          <AttributeID>Airline</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="732bb8ae-f9ef-41bd-8aee-5706925cac3d">
+      <ID>Dim Flight - To</ID>
+      <Name>Dim Flight - To</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="49e19b59-13e3-4d26-81af-ea08484d7d07">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0469e5bb-271f-4672-9465-3f7f1dc706df">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="00cf582e-4289-48bc-9005-21130e68c099">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="2b6bd110-e647-452a-94c6-1e759de8b0fa">
+      <ID>Dim Flight - Airline</ID>
+      <Name>Dim Flight - Airline</Name>
+      <DimensionID>Dim Airline</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="491a5563-cb05-4868-97df-16e4b9e88bcd">
+          <AttributeID>Airline Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a560f53e-13ac-4c25-b557-75ddf5d691de">
+          <AttributeID>Base Airport</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05dc4154-5665-4448-83ab-23f4dbea06aa">
+          <AttributeID>Airline Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55c01b62-e62f-4ed7-90a2-5373236db4c9">
+          <AttributeID>Airline Id</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9ae3ac29-330a-4909-b543-55d38bd3663b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="1332e988-e354-4689-873a-2bea2bf5da05">
+      <ID>Dim Flight - Airline - Base Airport</ID>
+      <Name>Dim Flight - Airline - Base Airport</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9b1c04e1-232a-4083-90de-3a9c14ccffe0">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d07eabe3-a36e-4668-8b55-e309fb990b48">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b48fed02-b468-4e7d-be1c-1a8da5292029">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="88329c3c-717d-448c-b70a-7c616e6a9ff4">
+      <ID>Dim Flight - From</ID>
+      <Name>Dim Flight - From</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="34b94b03-70d8-4eb9-b3ae-ed8bf91e08bc">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a48fcfd5-d607-4ae0-b7d4-dcc3af0c0180">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0052d865-9176-4079-b80c-3d06314d9fd4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ba932151-10f1-4dde-af51-b583b9ad5c95">
+      <ID>Dim Airline - Base Airport</ID>
+      <Name>Dim Airline - Base Airport</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="165491e8-bc24-4407-87c0-bac8e52fdd36">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77e8b0a1-eb72-4656-a2b1-a351dd25b6d2">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2b05cbd7-119c-4e04-916b-603977b68ebe">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8e204714-737d-4e45-b529-e3b25b9da802">
+      <ID>Dim Airplane - Airline</ID>
+      <Name>Dim Airplane - Airline</Name>
+      <DimensionID>Dim Airline</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="aeb6342f-8bfd-4351-9831-127e96b79897">
+          <AttributeID>Airline Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="648e47a9-b6ed-473e-b2c6-18255cdde65a">
+          <AttributeID>Base Airport</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="03286740-b8f2-4d7f-a6bb-2cf5a91b0958">
+          <AttributeID>Airline Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e3c3f28a-9abb-4f02-b3d3-2f40942e0145">
+          <AttributeID>Airline Id</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c2937ca6-28cb-4f03-9468-2f8ee9deaece">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="b7236d05-7677-4d14-9d56-403dc7104eda">
+      <ID>Dim Airplane - Airline - Base Airport</ID>
+      <Name>Dim Airplane - Airline - Base Airport</Name>
+      <DimensionID>Dim Airport</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="eadf4f3f-6e3a-4772-807b-b5f299e0ac93">
+          <AttributeID>Airport Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd170460-f228-4fc5-ad36-570fb073827a">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2f6d3e04-c0c4-41d1-ad18-0bc0b9a2eb5f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="134ba4b5-b958-4628-bc5e-efee7e76a6e1">
+      <ID>Fact Booking Sales</ID>
+      <Name>Fact Booking Sales</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="58562d9a-4a20-4898-b5a2-28dc4b16a096">
+          <ID>Price</ID>
+          <Name>Price</Name>
+          <Source dwd:design-time-name="25466eb9-4fb1-4c26-8650-efea6c7807bf">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1cd4f64e-0a47-4f3a-a516-3fbac73b73b2">
+              <TableID>dbo_FactBookingSales</TableID>
+              <ColumnID>Price</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="41fb07c5-89fe-48ce-a072-46bee45ca9c9">
+          <ID>Fact Booking Sales Count</ID>
+          <Name>Fact Booking Sales Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="07f70874-467a-438c-9247-77ecc684392e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7e82fea5-da7e-4ce1-bff9-03073ab3bc58">
+              <TableID>dbo_FactBookingSales</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="fee528df-fd18-42a2-8d1a-21fc5d542d79">
+          <CubeDimensionID>Fact Booking Sales</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="34b5b72b-2e96-459f-9ec3-40ff5d09fa79">
+              <AttributeID>Flight Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b14b9ae5-78fb-40bb-9656-d446ae1fae9c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c21ae16-690a-49f4-84ce-51fafffc6d03">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>FlightKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6e9b3e1f-42c9-4f9e-94f8-ce0e67278d5d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba7275ed-2ff0-481f-9d46-2fd3f72d0186">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>PassengerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3d101fe9-2793-4afa-ac88-d97443c7d632">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed9a3bf1-09b5-4205-ace4-fb6730114aed">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>BookingId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="56655090-64bc-4add-8279-2978e3b6d60d">
+          <CubeDimensionID>Arrival Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c86b4ca1-0ac3-4cf6-a282-40b9fdd7f25a">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0163d8b1-4039-44e2-b33c-8e6f95f64c6e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="22c10a1c-89e7-4144-ac5c-76b4ce0ba826">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>ArrivalDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b03ba733-9ab1-4e0d-a9f8-cf217021ea75">
+          <CubeDimensionID>Departure Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d33afa2b-2e09-46b3-b837-3f2c086c9b0d">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="10be531c-5f4f-49f4-8279-69fdfa794938">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d3826b30-75c7-4b56-942f-9e84020403c8">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>DepartureDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a8543224-1b2d-47c2-9f58-d4dbfdad0b6a">
+          <CubeDimensionID>Dim Passenger</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="614884a0-ba1f-42c6-8d0c-115e0f0fd4b0">
+              <AttributeID>Passenger Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cb4b88be-7faa-4a2c-87ce-a605871eae71">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c4fe90f-2379-43ea-83ed-ee651c4904d5">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>PassengerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cc0f1351-c155-4bd3-8395-366e591c8b66">
+          <CubeDimensionID>Dim Flight</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="31668be3-124c-4ffa-a5f4-e12b37d323f6">
+              <AttributeID>Flight Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a7f6420e-0ee4-43aa-9812-8aee5343ca99">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5bca4adc-715e-4d3e-81e1-77e47ae407ca">
+                    <TableID>dbo_FactBookingSales</TableID>
+                    <ColumnID>FlightKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="20c0fc6b-d874-43b0-96f9-ce3fe23ba5f7">
+          <CubeDimensionID>Dim Flight - To</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db7cc362-3d49-4151-a11e-953cc12fd912">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>To</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="188b5105-2ba1-4d8e-8cc1-a8e69427cb79">
+          <CubeDimensionID>Dim Flight - Airline</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d147d677-4437-49be-bc9f-92b2e7911a17">
+              <AttributeID>Airline Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Airline</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="95e2fd30-cdbb-4bed-8dc9-e67689343d4f">
+          <CubeDimensionID>Dim Flight - Airline - Base Airport</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="74bda7e5-d9f0-4f47-a593-ace75f279d84">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight - Airline</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Base Airport</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="edca7644-dff3-496c-a5cd-8bef43a52876">
+          <CubeDimensionID>Dim Flight - From</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9602d38d-8e1d-4565-9b12-a8ad9e58333f">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>From</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a3b76c82-210e-458d-9b35-5de9a68e1b26">
+      <ID>Fact Employee Salary</ID>
+      <Name>Fact Employee Salary</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6efff5b5-1be5-40b4-bf93-0d1375d79631">
+          <ID>Salary</ID>
+          <Name>Salary</Name>
+          <Source dwd:design-time-name="e800f1ce-f193-436e-8aa9-0611d451d713">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="900fba82-5c47-4e83-a776-151e6a6900a5">
+              <TableID>dbo_FactEmployeeSalary</TableID>
+              <ColumnID>Salary</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9105d565-a278-4c35-a26c-26184797d286">
+          <ID>Fact Employee Salary Count</ID>
+          <Name>Fact Employee Salary Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9bbf11eb-673f-458a-aaa4-82296319aab0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7c97e40a-0d07-4858-a8b9-55afb599c3ea">
+              <TableID>dbo_FactEmployeeSalary</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bd1d76e6-68fd-4533-a891-48bcb49c982b">
+          <CubeDimensionID>Dim Address</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8795e411-686a-4646-aac2-aa1e1a906057">
+              <AttributeID>Address Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e7497ab-a229-4840-9e85-0831cae3fe55">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20120491-92de-425c-9a60-ba6dbfe1d2c3">
+                    <TableID>dbo_FactEmployeeSalary</TableID>
+                    <ColumnID>AddressKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7a338681-1e98-4939-b293-5ff409ce3cd2">
+          <CubeDimensionID>Dim Employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="719ac82a-446d-4ed5-aadf-3153aa83eba9">
+              <AttributeID>Employee Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5538257e-b947-4ee0-bec4-618a31db1ff5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a76e5d2c-847d-4549-92b9-9a55fa8b845f">
+                    <TableID>dbo_FactEmployeeSalary</TableID>
+                    <ColumnID>EmployeeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="06094f18-3cc7-4700-9d4e-f4a725a22a34">
+          <CubeDimensionID>Dim Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1e857b5-1589-4070-92cb-f860e54ebc6e">
+              <AttributeID>Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f8aea344-dbeb-4f7b-b4f9-15e889da673a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1b1e5693-eced-47ca-bbc7-91c3a630213b">
+                    <TableID>dbo_FactEmployeeSalary</TableID>
+                    <ColumnID>DepartmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4d777eb3-9e20-4981-8532-0bff7417a1a8">
+      <ID>Fact Flight Schedule</ID>
+      <Name>Fact Flight Schedule</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="959e68d2-5728-4a52-90bf-2aec6324940f">
+          <ID>Fact Flight Schedule Count</ID>
+          <Name>Fact Flight Schedule Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c6f95de3-2fe5-48f3-9272-949759cb6a60">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f346cc97-3e89-4abc-90d9-e203a35d7579">
+              <TableID>dbo_FactFlightSchedule</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7a4e8d17-f65b-4b2b-9aca-c1feb1a0443c">
+          <CubeDimensionID>To</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0753a39a-c272-45aa-86e1-c32dc1731c79">
+              <AttributeID>Airport Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="21f5a98f-f5b0-40d1-914b-b92d9e27f9fb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f382c1f7-851c-4c15-b5be-9210b9045be6">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>To</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b9eb9dd-1f46-4faa-8a4c-fc148c051a80">
+          <CubeDimensionID>Departure Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f80bf70b-8316-41c0-bd42-0b9688f7d576">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b0993734-3a38-4a11-8414-4e4e4db959b9">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="460071e1-a69c-4207-8459-8290cf31cc13">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>DepartureDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="502e0007-eed1-4969-8108-44f76829600e">
+          <CubeDimensionID>Dim Airline</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="16d29873-8965-460e-ba9a-1f0f9071ea83">
+              <AttributeID>Airline Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="19f706dd-71ec-4e9a-a93e-a8093e5fb089">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d2489d0d-1976-478e-be8e-81330dc4e2b1">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>AirlineKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c7175357-e350-464c-b456-7ded9ae3db9f">
+          <CubeDimensionID>From</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bb106f31-c472-4195-b150-b4bbbe6aed53">
+              <AttributeID>Airport Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2070b4bf-8a2c-459a-ba25-7e4c10b6cb8c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c26582d-e852-4236-aec0-f9d43ca055ba">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>From</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9351379c-0208-4941-8a60-2ca03e6ce652">
+          <CubeDimensionID>Dim Airplane</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f156afd2-70ac-40f3-83a6-cd3d25392861">
+              <AttributeID>Airplane Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="37c62062-6003-472a-98f9-9b341a05681a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="142f6b99-56b3-4860-ab40-13abd59b4dd2">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>AirplaneKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1755af37-7043-473b-ba6d-a11f1f67eabe">
+          <CubeDimensionID>Dim Flight</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a8cc651e-7fae-4f97-b741-db74842da23c">
+              <AttributeID>Flight Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b2380524-1d43-4c5d-9bf7-f2aee3c8fd4a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d988149b-060d-421b-942e-35961146eeed">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>FlightKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="150e1825-a575-4f91-ac77-89e29f7cc249">
+          <CubeDimensionID>Arrival Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c9ccaac4-3428-4de3-b0b6-d55e0c0c51e3">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="28cb6f59-9b15-4f8d-9d71-f8a7d78b3f4c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="989e253c-3d76-430d-8df7-dc3c45d8a585">
+                    <TableID>dbo_FactFlightSchedule</TableID>
+                    <ColumnID>ArrivalDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="46a76628-83fc-4eab-9231-5cec6c57404d">
+          <CubeDimensionID>Dim Airline - Base Airport</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73d7044d-d156-4255-b055-0844bbf70377">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Airline</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Base Airport</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e2ddce92-2f45-4e58-b639-f7ac4b5e7b74">
+          <CubeDimensionID>Dim Airplane - Airline</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="255df19c-2dab-4983-82ca-2ae5ba0a62c1">
+              <AttributeID>Airline Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Airplane</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Airline</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f353ac3b-024f-4bac-86fd-bc552e283a89">
+          <CubeDimensionID>Dim Airplane - Airline - Base Airport</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9cf3922c-d790-42d0-8edf-695131e4d914">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Airplane - Airline</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Base Airport</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3d6f91a8-cad8-40af-8e27-8e31475c010b">
+          <CubeDimensionID>Dim Flight - To</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e68d846-ff86-4f53-9ff9-24c08fc74096">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>To</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6956dbdf-ec0b-4eff-b9c2-6d5934a3e863">
+          <CubeDimensionID>Dim Flight - Airline</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1953e02e-4e72-4c32-878c-54731cecdf48">
+              <AttributeID>Airline Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Airline</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="35f42fec-e649-481c-ac77-b2eb7006f8a2">
+          <CubeDimensionID>Dim Flight - Airline - Base Airport</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f32e2d0f-f293-4f44-81a6-09232908cd4f">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight - Airline</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Base Airport</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2cb6438e-1804-4781-aa95-51a2c32bae2a">
+          <CubeDimensionID>Dim Flight - From</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="30920c5c-e803-4405-9b24-f6dec96cec31">
+              <AttributeID>Airport Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Flight</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>From</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="19e5bc52-2db4-4031-b33b-2800482a2b57">
+    <DataSourceViewID>Ffdb DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="b289f41d-48d4-4577-a9e2-bbfdd5f4012d">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].AverageSalary
+ AS ROUND([Measures].[Salary] / [Measures].[Fact Employee Salary Count], 2), 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

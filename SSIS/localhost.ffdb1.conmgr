@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.ffdb1"
+  DTS:DTSID="{F8534C9A-08B0-4019-9AB1-824A2B4A9E62}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=ffdb1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-finalDW-{F8534C9A-08B0-4019-9AB1-824A2B4A9E62}localhost.ffdb1;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
