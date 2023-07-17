@@ -1,0 +1,49 @@
+﻿-- Câu 1: Thống kê số lượng vé và tổng giá vé trong năm 2015 --
+SELECT 
+	NON EMPTY [Departure Date].[Quarter].[Quarter] ON ROWS,
+	{[Measures].[Fact Booking Sales Count], [Measures].Price} ON COLUMNS
+FROM [Ffdb DW]
+WHERE [Departure Date].[Year].&[2015]
+
+-- Câu 2: Thống kê số lượng vé theo nới đến (quốc gia)--
+SELECT
+	NON EMPTY [Dim Flight - To].[Country].[Country] ON ROWS,
+	[Measures].[Fact Booking Sales Count] ON COLUMNS
+FROM [Ffdb DW]
+
+-- Câu 3: Thống kê số lượng hành khách theo quốc gia --
+SELECT 
+	NON EMPTY [Dim Flight - From].[Country].[Country] ON ROWS,
+	[Measures].[Fact Booking Sales Count] ON COLUMNS
+FROM [Ffdb DW]
+
+-- Câu 4: Thống kê số lượng vé đã được đặt của các hãng hàng không --
+SELECT
+	NON EMPTY [Dim Flight - Airline].[Airline Name].[Airline Name] ON ROWS,
+	[Measures].[Fact Booking Sales Count] ON COLUMNS
+FROM [Ffdb DW]
+
+-- Câu 5: Thống kê số lượng chuyến bay của các hãng hàng không --
+SELECT
+	NON EMPTY [Dim Flight - Airline].[Airline Name].[Airline Name] ON ROWS,
+	[Measures].[Fact Flight Schedule Count] ON COLUMNS
+FROM [Ffdb DW]
+
+-- Câu 6: Thống kê số lượng chuyến bay các quý trong năm 2015 --
+SELECT 
+	NON EMPTY [Arrival Date].[Quarter].[Quarter] ON ROWS,
+	[Measures].[Fact Flight Schedule Count] ON COLUMNS
+FROM [Ffdb DW]
+WHERE [Arrival Date].[Year].&[2015]
+
+-- Câu 7: Thống kê tổng và trung bình lương của các nhân viên theo quốc gia --
+SELECT 
+	[Dim Address].[Country].[Country] ON ROWS,
+	{[Measures].[Salary], [Measures].[Fact Employee Salary Count], [Measures].[AverageSalary]} ON COLUMNS
+FROM [Ffdb DW]
+
+-- Câu 8: Thống kê lương trung bình lương của nhân viên trong các phòng ban --
+SELECT
+	[Dim Department].[Department].[Department] ON ROWS,
+	{[Measures].[Salary], [Measures].[Fact Employee Salary Count], [Measures].[AverageSalary]} ON COLUMNS
+FROM [Ffdb DW]
